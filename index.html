@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="/images/Portfolio Favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Troy's Personal Portfolio</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-logo">
+        <a href="#">
+          <img src="images/Color logo - no background.png" alt="Logo" />
+        </a>
+      </div>
+
+      <div class="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="nav-links">
+        <li class="link"><a href="#">Home</a></li>
+        <li id="link1" class="link"><a href="#">About Me</a></li>
+        <li id="link2" class="link"><a href="#">Projects</a></li>
+        <li id="link3" class="link"><a href="#">Socials</a></li>
+      </ul>
+      <a href="mailto:troyjsorongon@gmail.com" class="btn">Contact Me</a>
+    </nav>
+
+    <script>
+      // JavaScript to handle hamburger menu toggle
+      document.addEventListener("DOMContentLoaded", function () {
+        const hamburger = document.querySelector(".hamburger-menu");
+        const navLinks = document.querySelector(".nav-links");
+
+        hamburger.addEventListener("click", function () {
+          // Toggle the nav-links visibility
+          navLinks.classList.toggle("active");
+        });
+      });
+    </script>
+
+    <header class="container">
+      <div class="image">
+        <img src="images/Portfolio Favicon.png" alt="Header" />
+      </div>
+      <div class="content">
+        <h4>Hello, I'm</h4>
+        <h1><span class="name">Troy Sorongon</span></h1>
+        <h2>Software Developer</h2>
+        <a
+          class="btn"
+          href="TroyJustin_Sorongon_ Software Engineer Resume.pdf"
+          download
+          >Download CV</a
+        >
+        <div class="column">
+          <div class="socials">
+            <a href="mailto:troyjsorongon@gmail.com"
+              ><i class="ri-mail-line"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/troyjustin-sorongon/"
+              target="_blank"
+              ><i class="ri-linkedin-box-fill"></i
+            ></a>
+            <a href="https://github.com/troysorongon" target="_blank"
+              ><i class="ri-github-fill"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="container">
+      <h2 class="header">About Me</h2>
+      <p class="sub-header">
+        I am a Software Developer focused on making an impact on the world using
+        technology! I love sports, traveling, exercising, and making new
+        connections. I continusouly learn new skills and topics to be the best
+        version of myself that I can be!
+      </p>
+      <div class="skills_edu">
+        <div class="card">
+          <span><i class="ri-macbook-fill"></i></span>
+          <h4>Technologies</h4>
+          <div class="skills">
+            <div class="skill">
+              <i class="ri-checkbox-circle-fill"></i>
+              <div class="skill-info">
+                <h3>Python</h3>
+                <p>Intermediate</p>
+              </div>
+            </div>
+            <div class="skill">
+              <i class="ri-checkbox-circle-fill"></i>
+              <div class="skill-info">
+                <h3>Java</h3>
+                <p>Intermediate</p>
+              </div>
+            </div>
+            <div class="skill">
+              <i class="ri-checkbox-circle-fill"></i>
+              <div class="skill-info">
+                <h3>C</h3>
+                <p>Intermediate</p>
+              </div>
+            </div>
+            <div class="skill">
+              <i class="ri-checkbox-circle-fill"></i>
+              <div class="skill-info">
+                <h3>JavaScript</h3>
+                <p>Basic</p>
+              </div>
+            </div>
+            <div class="skill">
+              <i class="ri-checkbox-circle-fill"></i>
+              <div class="skill-info">
+                <h3>TypeScript</h3>
+                <p>Basic</p>
+              </div>
+            </div>
+            <div class="skill">
+              <i class="ri-checkbox-circle-fill"></i>
+              <div class="skill-info">
+                <h3>HTML</h3>
+                <p>Basic</p>
+              </div>
+            </div>
+            <div class="skill">
+              <i class="ri-checkbox-circle-fill"></i>
+              <div class="skill-info">
+                <h3>CSS</h3>
+                <p>Basic</p>
+              </div>
+            </div>
+            <div class="skill">
+              <i class="ri-checkbox-circle-fill"></i>
+              <div class="skill-info">
+                <h3>Git</h3>
+                <p>Intermediate</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card education">
+          <span><i class="ri-graduation-cap-fill"></i></span>
+          <h4>Education</h4>
+          <h2 class="education">University of San Francisco:</h2>
+          <h3 class="education">B.Sc Bachelors Degree</h3>
+          <h3 class="education">Major: Computer Science</h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <p class="sub-header">Browse My Projects</p>
+      <h2 class="header">Projects</h2>
+      <div class="projects">
+        <div class="card">
+          <div class="content">
+            <img class="projectPic" src="./images/Visual8-screenshot.png" alt="Game Hub">
+            <h2 class="projectText">VISUAL8</h2>
+            <p class="projectText">A <strong>Data Visual</strong> application in collaboration with <em>Consilient Labs</em> that represents complex AI query data </p>
+          </div>
+          <div class="projectButtons">
+            <a href="https://github.com/team-cli/visual8" class="btn">Source Code</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="content">
+            <img class="projectPic" src="./images/GameHub-Screenshot.png" alt="Game Hub">
+            <h2 class="projectText">Game Hub</h2>
+            <p class="projectText">A gamehub that fetches resources from RAWG API. A project created and designed by <em>Mosh Hamedani</em> </p>
+          </div>
+          <div class="projectButtons">
+            <a href="https://github.com/troysorongon/game-hub-project" class="btn">Source Code</a>
+            <a href="https://game-hub-project-troysorongon.vercel.app/" class="btn">Live Demo</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="content">
+            <img class="projectPic" src="./images/network-compression-pic.avif" alt="Game Hub">
+            <h2 class="projectText">Network Compression Application</h2>
+            <p class="projectText">An application that detects network compression between a client and server by analyzing the transfer of packets through TCP and UDP connections. </p>
+          </div>
+          <div class="projectButtons">
+            <a href="https://github.com/troysorongon/End-to-End-Detection-of-Network-Compression" class="btn">Source Code</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="container">
+      <div class="footer-content">
+        <p class="touch">Get in Touch</p>
+        <h1>Contact Me</h1>
+        <div class="socials">
+          <a class="social email" href="mailto:troyjsorongon@gmail.com">
+            <i class="ri-mail-line"></i>troyjsorongon@gmail.com
+          </a>
+          <a class="social linkedin" href="https://www.linkedin.com/in/troyjustin-sorongon/" target="_blank">
+            <i class="ri-linkedin-box-fill"></i>LinkedIn
+          </a>
+        </div>
+        <div class="logo">
+          <img src="images/Color logo - no background.png" alt="" />
+        </div>
+      </div>
+    </footer>
+
+    <div class="copyright">Copyright © 2023 All Rights Reserved.</div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
