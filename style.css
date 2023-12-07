@@ -1,0 +1,550 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #151515;
+}
+
+nav {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.nav-logo {
+  max-width: 170px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.link a {
+  position: relative;
+  padding-bottom: 0.75rem;
+  color: #4d4c7d;
+}
+
+.link a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #e0dede;
+  transition: all 0.3s ease;
+}
+
+.link a:hover::after {
+  width: 80%;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  color: #4d4c7d;
+  background-color: #e0dede;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #9c9b9b;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 5rem 2rem;
+}
+
+.blurr {
+  position: absolute;
+  box-shadow: 0 0 1000px 50px #4d4c7d;
+  z-index: -100;
+}
+
+header {
+  position: relative;
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+header .content {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+header .content h4 {
+  color: #e0dede;
+  font-size: 1.5rem;
+  font-weight: 200;
+  -webkit-text-stroke: #4d4c7d;
+}
+
+header .content h1 {
+  color: #e0dede;
+  -webkit-text-stroke: #4d4c7d;
+  font-size: 3rem;
+  font-weight: 00;
+  line-height: 4rem;
+}
+
+header .content h2 {
+  color: #e0dede;
+  -webkit-text-stroke: #4d4c7d;
+  font-size: 3rem;
+  font-weight: 100;
+  margin-bottom: 1rem; /* Reduced margin for less space */
+}
+
+header .content a {
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  color: #4d4c7d;
+  background-color: #e0dede;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block; /* Added for proper padding and margin application */
+  margin-bottom: 1rem; /* Reduced margin for less space */
+}
+
+header .content .name {
+  -webkit-text-fill-color: #4d4c7d;
+  font-weight: 1000;
+}
+
+header .content p .aboutMe {
+  font-style: italic;
+}
+
+header .content p {
+  margin-bottom: 2rem;
+  color: #e0dede;
+}
+
+header .image {
+  position: relative;
+}
+
+header .image img {
+  max-width: 600px;
+  margin: auto;
+}
+
+header .column a {
+  color: #4d4c7d;
+  border: 1px solid #e0dede;
+  padding: 5px 10px;
+  font-size: 1.25rem;
+  border-radius: 100%;
+  transition: all 0.3s ease;
+  margin-top: -2rem;
+  margin: 0.15rem; /* This will add space around each <a> tag */
+}
+
+header .column a:hover {
+  background-color: #9c9b9b;
+  border-color: #9c9b9b;
+}
+
+section .header {
+  margin-bottom: 1rem;
+  color: #e0dede;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.skills_edu {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  justify-content: center; /* Center grid items horizontally */
+  margin-left: auto; /* Center the entire grid container */
+  margin-right: auto; /* Center the entire grid container */
+}
+
+.skills_edu .card {
+  background-color: #27272a;
+  padding: 1rem;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.skills_edu .card:hover {
+  background-color: #323232;
+  border-color: #4d4c7d;
+}
+
+.skills_edu .card span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 9px;
+  font-size: 1.75rem;
+  color: #e0dede;
+  border-radius: 5px;
+}
+
+.skills_edu .card h4 {
+  margin-bottom: 0.5rem;
+  color: #e0dede;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.skills_edu .card.education h3 {
+  color: #e0dede;
+  text-align: center;
+  font-weight: 500;
+}
+
+.skills_edu .card.education h2 {
+  color: #9c9b9b;
+  text-align: center;
+  font-weight: 500;
+}
+
+
+
+.skills_edu .card .skills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.skills_edu .card .skills .skill {
+  display: flex;
+  /* align-items: center; */
+  gap: 10px; /* Adjusts the space between the icon and the text block */
+  color: #4d4c7d;
+}
+
+.skills_edu .card .skills .skill .skill-info {
+  color: #e0dede;
+  /* display: flex; */
+  flex-direction: column;
+  font-size: 1.1rem;
+}
+
+.skills_edu .card .skills .skill h3,
+.skills_edu .card .skills .skill p {
+  margin: 0; /* Removes default margin */
+}
+
+.skills_edu .card .skills .skill p {
+  font-size: 0.8rem; /* Adjusts the font size for the paragraph */
+  color: #9c9b9b; /* Adjusts the color if needed */
+}
+
+.skills_edu .card a {
+  color: #e0dede;
+  transition: all 0.3s ease;
+}
+
+.sub-header {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  color: #ccc;
+}
+
+.projects {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.projects h2 {
+  color: #4d4c7d;
+}
+
+.projects .card {
+  padding: 3rem 2rem;
+  background-color: #27272a;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.projects .card:hover {
+  background-color: #323232;
+  border-color: #4d4c7d;
+}
+
+.projects .card .content {
+  flex: 1;
+  margin-bottom: 2rem;
+  display: flex; /* Enables Flexbox */
+  flex-direction: column; /* Stacks children vertically */
+  align-items: center; /* Centers children horizontally */
+  justify-content: center; /* Optionally center children vertically */
+}
+
+.projects .card h4 {
+  margin-bottom: 1rem;
+  color: #e0dede;
+  font-size: 1.2rem;
+  font-weight: 500;
+  
+}
+
+.projects .card h3 {
+  color: #e0dede;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  border-bottom: 2px solid #e0dede;
+}
+
+.projects .card img {
+  border-bottom: 2px solid #e0dede;
+  margin-bottom: 2rem;
+  width: auto; /* Make the image width responsive */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 300px; /* Optional: limit the maximum width */
+}
+
+.projects .card .projectText {
+  text-align: center;
+}
+
+.projects .card .projectButtons {
+  display: flex;
+  justify-content: center; /* Center buttons horizontally */
+  align-items: center; /* Center buttons vertically (if needed) */
+  gap: 1rem; /* Space between the buttons */
+}
+
+.projects .card p {
+  color: #e0dede;
+  margin-bottom: 0.75rem;
+  margin-top: 1rem;
+}
+
+.projects .card p i {
+  color: #e0dede;
+  font-size: 1.2rem;
+  margin-right: 0.3rem;
+}
+
+.projects .card a.btn {
+  color: #4d4c7d;
+  background-color: #e0dede;
+  border: 2px solid #4d4c7d;
+  text-align: center;
+  border-radius: 1rem;
+  padding: 1rem 2rem; /* Fixed padding for consistent size */
+  width: 150px; /* Fixed width */
+  height: 90px; /* Fixed height */
+  display: flex; /* Use flexbox for alignment */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  text-decoration: none; /* Remove underline from links */
+  font-size: 1rem; /* Optional: Adjust font size as needed */
+  margin: 0.5rem; /* Space around buttons */
+  box-sizing: border-box; /* Include padding and border in the width and height */
+}
+
+.projects .card a:hover {
+  background-color: #9c9b9b;
+  border-color: #9c9b9b;
+}
+
+footer .footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center; /* Center text for all children */
+}
+
+footer p {
+  font-size: 1rem; /* Adjust to match your design */
+  color: #9c9b9b; /* Adjust to match your design */
+}
+
+footer h1 {
+  margin-bottom: 2rem; /* Adjust space between "Contact Me" and social links */
+  color: #e0dede; /* Color of the "Contact Me" text */
+  font-size: 2.5rem; /* Size of the "Contact Me" text */
+}
+
+footer .socials {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px; /* Adjust padding to match the design */
+  border: 1px solid #ccc;
+  border-radius: 50px; /* This gives a pill-like shape */
+  font-size: 1.2rem;
+  gap: 20px; /* Space between social buttons */
+  margin-bottom: 1.5rem;
+}
+
+footer a{
+  color: #e0dede
+}
+
+footer .social i {
+  margin-right: 8px; /* Space between icon and text */
+}
+
+footer .social:hover {
+  color: #4d4c7d;
+}
+
+footer .logo{
+  max-width: 100px;
+  margin-top: 2rem;
+  display: block; /* Ensures the logo is a block element */
+  margin-left: auto;
+  margin-right: auto; /* Centers the logo horizontally */
+}
+
+.copyright {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+  color: #e0dede;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.hamburger-menu {
+  display: none; /* Hidden by default, will be shown in a media query */
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 25px; /* Height of the entire hamburger icon */
+}
+
+.hamburger-menu span {
+  display: block;
+  height: 3px;
+  width: 30px;
+  background-color: #e0dede;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 1220px) {
+  header {
+    grid-template-columns: 1fr; /* Change to a single column layout */
+  }
+
+  header .image {
+    order: -1; /* Moves the image above the content */
+  }
+
+  .skills_edu .card .skills {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
+  }
+
+  .skills_edu, .projects {
+    grid-template-columns: 1fr 1fr; /* Two columns for skills_edu and projects */
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  footer .column {
+    width: 100%; /* Full width for footer columns */
+  }
+}
+
+@media (max-width: 800px) {
+  .nav-links {
+    position: fixed;
+    right: -100%; /* Off the screen */
+    top: 0;
+    width: 60%; /* Width of the side menu */
+    height: 100vh;
+    background-color: #151515;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    transition: right 0.3s ease;
+  }
+
+  .nav-links.active {
+    right: 0; /* Bring the side menu into view */
+  }
+
+  .hamburger-menu {
+    display: flex;
+  }
+
+  header .image::before {
+    display: none;
+  }
+
+  .skills_edu .card .skills {
+    grid-template-columns: 1fr; /* One column for small screens */
+  }
+
+  .skills_edu .card .skills .skill {
+    justify-content: center; /* Center items horizontally */
+    text-align: center; /* Center text alignment */
+  }
+
+  .skills_edu .card .skills .skill .skill-info {
+    align-items: center; /* Center items in flex-direction column */
+  }
+
+  .skills_edu, .projects {
+    grid-template-columns: 1fr; /* Single column layout for smaller screens */
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer .column {
+    width: auto; /* Adjusts the width for smaller screens */
+  }
+}
